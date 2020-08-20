@@ -1,0 +1,42 @@
+$(".industry").click(function(event){
+	$(".industries").fadeIn(500,function(){
+	});
+	event.stopPropagation();
+});
+$("body").click(function(event){
+	$(".industries").fadeOut(500,function(){
+	});
+	$(".company_div").fadeOut(500,function(){
+	});
+	event.stopPropagation();
+});
+$(".company").click(function(event){
+	$(".company_div").fadeIn(500,function(){
+	});
+	event.stopPropagation();
+});
+$(".okay").click(function(){
+	$(".cookies").fadeOut(500);
+	$(".cookies_button").fadeOut(500);
+});
+$(".customize").click(function(){
+	$(".cookies").fadeOut(500);
+	$(".cookies_button").fadeOut(500);
+});
+var con_c=1;
+var conv=document.querySelector(".conversation");
+conv.addEventListener("click",function(){
+	if(con_c==1){
+		document.querySelector(".con_1").classList.add("con_1_v");
+		document.querySelector(".con_2").classList.add("con_2_v");
+		con_c+=1;
+	}
+	else if(con_c==2){
+		document.querySelector(".con_1").classList.remove("con_1_v");
+		document.querySelector(".con_2").classList.remove("con_2_v");
+		con_c-=1;
+	}
+});
+$(".conversation").click(function(){
+	$(".conversation_box").fadeToggle(500);
+});

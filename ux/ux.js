@@ -1,0 +1,10 @@
+$(".nav_box_3").click(function(){
+	$(".nav_slider").slideDown(700,function(){
+		$("body").css("overflow-y","hidden");
+	});
+});
+$(".nav_cut").click(function(){
+	$(".nav_slider").slideUp(700,function(){
+		$("body").css("overflow-y","visible");
+	});
+});
