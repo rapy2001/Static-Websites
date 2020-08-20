@@ -1,0 +1,198 @@
+<html>
+	<head>
+		<title>Intel</title>
+		<link rel="stylesheet" type="text/css" href="intel.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="part_1">
+			<div class="part_1_box_1">
+				<h3 onclick="pss();">Products</h3>
+				<h3 onclick="pss();">Solutions</h3>
+				<h3 onclick="pss();">Support</h3>
+			</div>
+			<div class="part_1_box_2">
+				<img src="intel-logo.jpg">
+			</div>
+			<div class="part_1_box_3">
+				<h3 onclick="region();">USA (English) <i class="fa fa-globe"></i></h3>
+				<h3 onclick="region_Sign();">Sign In <i class="fa fa-user"></i></h3>
+				<h3 onclick="search();"><i class="fa fa-search"></i></h3>
+			</div>
+		</div>
+		<div class="region" id="click1">
+			<div class="region_box_1">
+				<h3> <i class="fa fa-globe"></i>Select Your Region</h3>
+				<h2 onclick="region();">X</h2>
+			</div>
+			<div class="region_box_2">
+				<h3>Go to your Country's/Region's Homepage</h3>
+			</div>
+			<div class="region_box_3">
+				<h3>Asia Pacific</h3>
+				<h3>Europe</h3>
+				<h3>Latin America</h3>
+				<h3>Middle East/Africa</h3>
+				<h3>North America</h3>
+			</div>
+		</div>
+		<div class="sign_in" id="click1">
+			<div class="sign_in_box_1">
+				<h2 style="margin-right:10px; "><i class="fa fa-user"></i></h2>
+				<h2 style="margin-right:250px;">Sign In</h2>
+				<h2 onclick="region_Sign();" class="sign_in_cut">X</h2>
+			</div>
+			<div class="sign_in_box_2">
+				<input type="text" placeholder="Username">
+				<input type="text" placeholder="Password">
+			</div>
+			<div class="sign_in_box_3">
+				<h3>By Signing in you agree to our <a>Terms of Service</a> </h3>
+				<h3 class="sign_in_button">Sign In</h3>
+				<h3>Forgot Your Intel <a>Username</a> or <a>Password</a> ?</h3>
+				<h3>DO you work for Intel ?   <a>Sign in here</a></h3>
+			</div>
+		</div>
+		<div class="search" id="click1">
+			<div class="search_box_1">
+				<h2><i class="fa fa-search"></i></h2>
+				<input type="text" placeholder="Search Intel.com">
+				<h2 style="margin-left:85px;" onclick="search();" class="search_cut">X</h2>
+			</div>
+			<div class="search_box_2">
+				<h2><a>Sign In</a></h2>
+				<h2>to access restricted content</h2>
+			</div>
+		</div>
+		<div class="pss" id="click3">
+			<div class="pss_box_1">
+				<h3 onclick="pss_box(2);">Products</h3>
+				<h3 onclick="pss_box(3);">Solutions</h3>
+				<h3 onclick="pss_box(4);">Support</h3>
+				<h3 class="pss_cut" style="margin-left:115px; border-bottom:none;" onclick="pss();">X</h3>
+			</div>
+			<!-- 
+			onclick="pss_box(2);"
+			onclick="pss_box(3);"
+			onclick="pss_box(4);" -->
+			<div class="pss_box_2" id="box_v_2">
+				<h4>Systems &amp; Devices</h4>
+				<h4>Processors</h4>
+				<h4>Boards &amp; Kits</h4>
+				<h4>Chipsets</h4>
+				<h4>FPGAs and Programmable Devices</h4>
+				<h4>Structured ASICs</h4>
+				<h4>Power Solutions</h4>
+				<h4>Memory &amp; Storage</h4>
+				<h4>Server Products</h4>
+				<h4>Networking &amp; I/O</h4>
+				<h4>Wireless</h4>
+				<h4>Software &amp; Services</h4>
+				<h4>Intel Gateways</h4>
+				<h4>Technologies</h4>
+				<h4>How to Buy</h4>
+			</div>
+			<div class="pss_box_3" id="box_v_3">
+				<div>
+					<h4>Programs</h4>
+					<h4>Partners</h4>
+					<h4>Hardware Developers</h4>
+					<h4>Software Developers</h4>
+					<h4>FPGA Developers</h4>
+					<h4>Educators</h4>
+				</div>
+				<div>
+					<h4>Topics</h4>
+					<h4>Business &amp; IT</h4>
+					<h4>Topics &amp; Applciations</h4>
+					<h4>Gaming</h4>
+					<h4>News &amp; Events</h4>
+				</div>
+			</div>
+			<div class="pss_box_4" id="box_v_4">
+				<h4>Product Support</h4>
+				<h4>Intel® FPGA Support</h4>
+				<h4>Downloads & Drivers</h4>
+				<h4>Developer Support</h4>
+				<h4>Support for Suppliers</h4>
+				<h4>Community Forums</h4>
+			</div>
+		</div>
+		<div class="part_2">
+			<div class="part_2_box_1">
+				<h1>Accelerate Your Data Center With AI Built In. <br>Only on Intel.</h1>
+				<h2>	The latest 2nd Generation Intel® Xeon® Scalable processors with Intel® Deep Learning Boost accelerates AI inference,<br> helping you get the most from your investment.
+				</h2>
+				<div class="part_2_box_2"><h3>See how you can accelerate your data center</h3></div>
+			</div>
+		</div>
+		<div class="part_3">
+			<div class="part_3_box_1" onmouseover="scaleup_1();" onmouseleave="scaleup_1();" >
+				<div class="part_3_img img_1" id="zoom_1">
+					
+				</div>
+				<div>
+					<h3>PROCESSOR</h3>
+					<h2>10th Generation Intel Core mobile processors are here</h2>
+				</div>
+			</div>
+			<div class="part_3_box_2" onmouseover="scaleup_2();" onmouseleave="scaleup_2();">
+				<div class="part_3_img img_2" id="zoom_1">
+				
+				</div>
+				<div>
+					<h3>PROCESSOR</h3>
+					<h2>The debate is over: cloud performance and value on 2nd Gen Intel® Xeon® Scalable processors</h2>
+				</div>
+			</div>
+			<div class="part_3_box_3" onmouseover="scaleup_3();" onmouseleave="scaleup_3();">
+				<div class="part_3_img img_3">
+					
+				</div>
+				<div>
+					<h3>RESEARCH</h3>
+					<h2>Find out how innovation program Project Athena1 is redesigning the laptop experience </h2>
+				</div>
+			</div>
+		</div>
+		<div class="part_4">
+			<h2>Product and Performance information</h2>
+			<h3>Project Athena is a code name for Intel’s new Innovation Program.</h3>
+		</div>
+		<div class="part_5">
+			<div class="part_5_box_1">
+				<div>
+					<img src="intel-logo.jpg">
+				</div>
+			</div>
+			<div class="part_5_box_2">
+				<div class="part_5_box_2_1">
+					<h3>Company Information</h3>
+					<h3>Our Commitment</h3>
+					<h3>Communities</h3>
+					<h3>Investor Relations</h3>
+					<h3>Contact US</h3>
+					<h3>Newsroom</h3>
+					<h3>Jobs</h3>
+				</div>
+				<div class="part_5_box_2_2">
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-instagram"></i>
+					<i class="fa fa-youtube-play"></i>
+				</div>
+				<div class="part_5_box_2_3">
+					<h3>&copy; Intel Corporation</h3>
+					<h3>Terms of Use</h3>
+					<h3>Trademarks</h3>
+					<h3>Privacy</h3>
+					<h3>Cookies</h3>
+					<h3>Supply Chain Transparency</h3>
+					<h3 style="border-right:none;">Site Map</h3>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="intel.js"></script>
+	</body>
+</html>
